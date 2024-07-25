@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dooney - Welcome Series</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      border-spacing: 0;
+      border: 0;
+    }
+    body{
+      margin: 0;
+    }
+    table{
+      border-spacing: 0;
+      border: 0;
+    }
+    .main-wrapper{
+      width: 100%;
+      table-layout: fixed;
+      background-color: #f9f9f9;
+    }
+    .main{
+      width: 100%;
+      max-width: 600px;
+      background-color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      color: #333333;
+    }
+    img{
+      max-width: 100%;
+    }
+    a.btn{
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      padding: 15px 30px;
+      line-height: 1;
+      background-color: #192C4F;
+      display: inline-block;
+    }
+    /* layout */
+    .two-col{
+      text-align: center;
+    }
+    .two-col .col{
+      display: inline-block;
+      width: 270px;
+      max-width: 100%;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+    /* header */
+    .header{
+      padding: 0 30px;
+      border-top: solid 2px #d3d2d2;
+    }
+    .logo{
+      text-align: center;
+      padding: 17.5px 0 20px;
+    }
+    .nav{
+      text-align: center;
+      padding: 0 17.5px;
+    }
+    .nav-item{
+      font-size: 12px;
+      text-decoration: none;
+      letter-spacing: 1.2px;
+      margin-right: 30px;
+      text-align: center;
+      color: #333333;
+    }
+    /* hero */
+    .hero .content{
+      padding: 30px;
+      text-align: center;
+    }
+    .hero .content h2{
+      font-size: 30px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .hero img{
+      display: block;
+    }
+    .hero .content p{
+      font-size: 16px;
+    }
+    /* Coupon */
+    .coupon{
+      background-color: #F2F2F2;
+      padding: 30px;
+      border-bottom: solid 2px #d3d2d2;
+    }
+    .coupon .col.image img{
+      width: 100%;
+      height: 324px;
+      object-fit: cover;
+    }
+    .coupon .col.content .wrapper{
+      background-color: #fff;
+      border: solid 2px #d3d2d2;
+      padding: 4px;
+      margin-top: 19px;
+    }
+    .coupon .col.content .wrapper .inner-wrapper{
+      padding: 35px 20px;
+      border: dashed 2px #d3d2d2;
+    }
+    .coupon .col.content p{
+      font-size: 16px;
+    }
+    .coupon .col.content h3{
+      font-size: 30px;
+      font-weight: 400;
+      font-family: 'Lora', serif;
+    }
+    .coupon .col.content h4{
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 14px 0 20px;
+    }
+    .coupon .col.content h4 span{
+      font-weight: 700;
+      color: #192C4F;
+    }
+    /* style */
+    .style{
+      border-top: dashed 2px #d3d2d2;
+      margin-top: 2px;
+      padding: 30px;
+      width: 100%;
+      text-align: center;
+    }
+    .style h2{
+      font-size: 28px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      margin-bottom: 34px;
+    }
+    .style .product{
+      width: 213px;
+      height: 213px;
+    }
+    /* image buttons */
+    .image-buttons{
+      background-color: #f2f2f2;
+      padding: 2px 0;
+      border-bottom: solid 2px #d3d2d2;
+      border-top: solid 2px #d3d2d2;
+    }
+    .image-buttons .col{
+      margin: 26px 20px;
+      width: 259px;
+    }
+    .image-buttons img{
+      height: 196px;
+      width: 259px;
+    }
+    /* text */
+    .text .two-col .col{
+      width: 300px;
+    }
+    .text .col.content{
+      padding: 20px 30px;
+      text-align: left;
+    }
+    .text .col.content h2{
+      font-size: 28px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+    }
+    .text .col.content h4{
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 14px;
+    }
+    .text .col.content p strong{
+      color: #192C4F;
+    }
+    .text .col.content p.small{
+      margin-top: 14px;
+      font-size: 10px;
+    }
+    .text .col.content p.small a{
+      color:#333333;
+    }
+    .text img{
+      height: 348px;
+      display: block;
+    }
+    /* klarna */
+    .klarna{
+      padding: 20px 30px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    .klarna h4{
+      font-size: 22px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .klarna h4 img{
+      display: inline-block;
+      margin-bottom: -2px;
+      margin-left: 2px;
+      height: 30px;
+    }
+    /* share */
+    .footer{
+      padding: 20px 30px 30px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .footer a{
+      color: #333333;
+      text-decoration: none;
+    }
+    .footer .col{
+      width: 200px;
+    }
+    .footer .badge{
+      width: 160px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .footer .social-links{
+      margin: 30px 0 40px;
+      display: inline-block;
+      text-align: center;
+    }
+    .footer .social-icon{
+      font-size: 0;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .footer .social-icon img{
+      height: 24px;
+      width: 24px;
+      object-fit: contain;
+    }
+    .footer p{
+      margin-bottom: 25px;
+    }
+    .dash-line{
+      width: 100%;
+    }
+    .dash-line td{
+      border-top: dashed 2px #d3d2d2;
+    }
+  </style>
+</head>
+<body>
+  <center class="main-wrapper">
+    <table class="main" width="100%">
+      <tr>
+        <td>
+          <!-- header -->
+          <table class="header" width="100%">
+            <tr>
+              <td class="logo" width="100%">
+                <a href="https://www.dooney.com/home" target="_blank"><img src="./img/logo.png" alt="logo"></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="nav" width="100%">
+                <a href="#" class="nav-item">WOMEN</a>
+                <a href="#" class="nav-item">MEN</a>
+                <a href="#" class="nav-item">TRAVEL</a>
+                <a href="#" class="nav-item">SPORTS</a>
+                <a href="#" class="nav-item">SHOES</a>
+                <a href="#" class="nav-item" style="margin-right:0;">SALE</a>
+              </td>
+            </tr>
+          </table>
+          <!-- header -->
+          <!-- hero -->
+          <table class="hero" width="100%">
+            <tr>
+              <td class="content">
+                <h2>Welcome To The Family</h2>
+                <p>Thanks for joining us. Stay tuned for exclusive promotions, early access to new products, and more!</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="./img/hero.png" alt="hero">
+              </td>
+            </tr>
+          </table>
+          <!-- hero -->
+          <!-- coupon -->
+          <table class="coupon" width="100%"> 
+            <tr class="two-col">
+              <td class="col content">
+                <div class="wrapper">
+                  <div class="inner-wrapper">
+                    <p>To show our appreciation,</p>
+                    <h3>Enjoy 10% Off</h3>
+                    <p>your next purchase.</p>
+                    <h4>Use code:<br><span>TestCoupon</span></h4>
+                    <a href="#" target="_blank" class="btn">SHOP NOW</a>
+                  </div>
+                </div>
+              </td>
+              <td class="col image">
+                <img src="./img/coupon.png" alt="model with pourse">
+              </td>
+            </tr>
+          </table>
+          <!-- coupon -->
+          <!-- style -->
+          <table class="style" width="100%">
+            <tr>
+              <td>
+                <h2>Discover Your Style</h2>
+              </td>
+            </tr>
+            <tr class="two-col">
+              <td class="col" style="margin-bottom: 20px;">
+                <a href="#" target="_blank"><img src="./img/bag-01.jpg" alt="product" class="product"></a>
+              </td>
+              <td class="col" style="margin-bottom: 20px;">
+                <a href="#" target="_blank"><img src="./img/bag-02.jpg" alt="product" class="product"></a>
+              </td>
+            </tr>
+            <tr class="two-col">
+              <td class="col" style="margin-bottom: 20px;">
+                <a href="#" target="_blank"><img src="./img/bag-03.jpg" alt="product" class="product"></a>
+              </td>
+              <td class="col" style="margin-bottom: 20px;">
+                <a href="#" target="_blank"><img src="./img/bag-04.jpg" alt="product" class="product"></a>
+              </td>
+            </tr>
+          </table>
+          <!-- style -->
+          <!-- image buttons -->
+          <table class="image-buttons" width="100%">
+            <tr class="dash-line"><td></td></tr>
+            <tr class="two-col">
+              <td class="col">
+                <a href="#" target="_blank">
+                  <img src="./img/image-button-01.png" alt="shop new arrivals">
+                </a>
+              </td>
+              <td class="col">
+                <a href="#" target="_blank">
+                  <img src="./img/image-button-02.png" alt="shop new arrivals">
+                </a>
+              </td>
+            </tr>
+            <tr class="dash-line"><td></td></tr>
+          </table>
+          <!-- image buttons -->
+          <!-- text -->
+          <table class="text">
+            <tr class="two-col">
+              <td class="col content">
+                <h2>Like to Text?</h2>
+                <h4>We Do Too!</h4>
+                <p>Get the best Dooney & Bourke deals and updates sent straight to your phone.<br><strong>Text the word DOONEY to 26473 to join</strong></p>
+                <p class="small">By subscribing to Dooney & Bourke text messaging, you agree to receive recurring autodialed marketing text messages (e.g. cart reminders) to the mobile number used at opt-in. Consent is not a condition of purchase. Message frequency may vary. Msg & data rates may apply. Reply HELP for help and STOP to cancel. <a href="#" target="_blank">See Terms and Conditions & Privacy Policy.</a></p>
+              </td>
+              <td class="col image">
+                <img src="./img/text.png" alt="model with pourse">
+              </td>
+            </tr>
+          </table>
+          <!-- text -->
+          <!-- klarna -->
+          <table class="klarna" width="100%">
+              <tr>
+                <td>
+                  <p>4 EASY, INTEREST-FREE PAYMENTS</p>
+                  <h4>Love it now, pay later with <img src="./img/klarna.png" alt="klarna logo"></h4>
+                </td>
+              </tr>
+          </table>
+          <!-- klarna -->
+          <!-- share -->
+          <table class="footer" width="100%">
+            <tr class="two-col">
+              <td class="col">
+                <a href="#" target="_blank"><img src="./img/apple.png" alt="apple store badge" class="badge"></a>
+              </td>
+              <td class="col">
+                <a href="#" target="_blank"><img src="./img/google.png" alt="google play badge" class="badge"></a>
+              </td>
+            </tr>
+            <tr>
+                <td class="social-links">
+                  <a href="#" target="_blank" class="social-icon">
+                    <img src="./img/facebook.png" alt="facebook icon">
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <img src="./img/instagram.png" alt="instagram icon">
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <img src="./img/twitter.png" style="width: 30px;height: 30px;transform: translateY(3px);" alt="twitter icon">
+                  </a>
+                  <a href="#" target="_blank" class="social-icon">
+                    <img src="./img/youtube.png" alt="youtube icon">
+                  </a>
+                  <a href="#" target="_blank" class="social-icon" style="margin-right: 0;">
+                    <img src="./img/pinterest.png" alt="pinterest icon">
+                  </a>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="links"><a href="#" target="_blank">Customer Service</a> | <a href="#" target="_blank">The Dooney Guarantee</a> | <a href="#" target="_blank">Return Policy</a></p>
+                <p class="unsubscribe">If you would no longer like to receive our emails please <a href="#" target="_blank">click here.</a></p>
+                <p class="disc">Cannot be combined with other offers. Discount is not applied towards shipping or sales tax. Discount cannot be applied towards our Dipinta Collection, Monogram Pendant Collection, Saffiano Totes (style# BSAFS1924 and BSAFS1925) or In Good Company (Roberta Pieri, Henry's or Oncour) brand products. Not redeemable for cash in part or full. Offer not valid on previously purchased merchandise.</p>
+                <p class="shipping">Free Economy shipping on orders $99+. Valid on US orders only.</p>
+                <p class="copyright">© 2021 Dooney & Bourke.</p>
+                <p class="bottom-links">
+                  <a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | <a href="">View Online <br> Dooney & Bourke</a> | <a href="">1 Regent St</a> | <a href="">Norwalk, CT 06855</a> | <a href="">United States</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- share -->
+
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
